@@ -1,0 +1,17 @@
+project_name = input("Enter project name: ")
+description = input("Enter project description: ")
+usage = input("Enter usage instructions: ")
+
+readme_content = f"""# {project_name}
+
+## Description
+{description}
+
+## Usage
+{usage}
+"""
+
+with open("README.md", "w") as file:
+    file.write(readme_content)
+
+print("README.md file generated.")
